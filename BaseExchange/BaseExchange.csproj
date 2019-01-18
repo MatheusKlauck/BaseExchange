@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="SuperSocket.ClientEngine, Version=0.10.0.0, Culture=neutral, PublicKeyToken=ee9af13f57f00acc, processorArchitecture=MSIL">
+      <HintPath>..\packages\SuperSocket.ClientEngine.Core.0.10.0\lib\net45\SuperSocket.ClientEngine.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -39,12 +42,33 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="WebSocket4Net, Version=0.15.2.11, Culture=neutral, PublicKeyToken=eb4e154b696bf72a, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebSocket4Net.0.15.2\lib\net45\WebSocket4Net.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Authentication\ApiCredentials.cs" />
     <Compile Include="Authentication\AuthenticationProvider.cs" />
     <Compile Include="Authentication\PrivateKey.cs" />
+    <Compile Include="Interfaces\IRateLimiter.cs" />
+    <Compile Include="Interfaces\IRequest.cs" />
+    <Compile Include="Interfaces\IRequestFactory.cs" />
+    <Compile Include="Interfaces\IResponse.cs" />
+    <Compile Include="Interfaces\IWebSocket.cs" />
+    <Compile Include="Logging\DebugTextWriter.cs" />
+    <Compile Include="Logging\Log.cs" />
+    <Compile Include="Logging\ThreadSafeFileWriter.cs" />
+    <Compile Include="Objects\ApiProxy.cs" />
+    <Compile Include="Objects\ByteOrderComparer.cs" />
+    <Compile Include="Objects\CallResult.cs" />
+    <Compile Include="Objects\Constants.cs" />
+    <Compile Include="Objects\Enums.cs" />
+    <Compile Include="Objects\Error.cs" />
+    <Compile Include="Objects\ExchangeOptions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
