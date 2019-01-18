@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CryptoExchange.Net.Attributes
+namespace BaseExchange.Attributes
 {
     public class JsonOptionalPropertyAttribute : Attribute
     {
