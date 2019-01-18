@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="SuperSocket.ClientEngine, Version=0.10.0.0, Culture=neutral, PublicKeyToken=ee9af13f57f00acc, processorArchitecture=MSIL">
       <HintPath>..\packages\SuperSocket.ClientEngine.Core.0.10.0\lib\net45\SuperSocket.ClientEngine.dll</HintPath>
     </Reference>
@@ -50,11 +53,14 @@
     <Compile Include="Authentication\ApiCredentials.cs" />
     <Compile Include="Authentication\AuthenticationProvider.cs" />
     <Compile Include="Authentication\PrivateKey.cs" />
+    <Compile Include="Converters\ArrayConverter.cs" />
+    <Compile Include="Converters\TypeConverters.cs" />
     <Compile Include="Interfaces\IRateLimiter.cs" />
     <Compile Include="Interfaces\IRequest.cs" />
     <Compile Include="Interfaces\IRequestFactory.cs" />
     <Compile Include="Interfaces\IResponse.cs" />
     <Compile Include="Interfaces\IWebSocket.cs" />
+    <Compile Include="Interfaces\IWebsocketFactory.cs" />
     <Compile Include="Logging\DebugTextWriter.cs" />
     <Compile Include="Logging\Log.cs" />
     <Compile Include="Logging\ThreadSafeFileWriter.cs" />
