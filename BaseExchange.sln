@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseExchange", "BaseExchange\BaseExchange.csproj", "{EA5C1503-40E8-4538-BFC0-ED65A1C25E48}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseExchangeTest", "BaseExchangeTest\BaseExchangeTest.csproj", "{CEB5A551-7684-4F0D-ACBC-38142E7C6F02}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{EA5C1503-40E8-4538-BFC0-ED65A1C25E48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA5C1503-40E8-4538-BFC0-ED65A1C25E48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA5C1503-40E8-4538-BFC0-ED65A1C25E48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEB5A551-7684-4F0D-ACBC-38142E7C6F02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEB5A551-7684-4F0D-ACBC-38142E7C6F02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEB5A551-7684-4F0D-ACBC-38142E7C6F02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEB5A551-7684-4F0D-ACBC-38142E7C6F02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

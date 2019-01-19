@@ -39,6 +39,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,11 +51,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attributes\JsonOptionalPropertyAttribute.cs" />
     <Compile Include="Authentication\ApiCredentials.cs" />
     <Compile Include="Authentication\AuthenticationProvider.cs" />
     <Compile Include="Authentication\PrivateKey.cs" />
+    <Compile Include="BaseClient.cs" />
     <Compile Include="Converters\ArrayConverter.cs" />
+    <Compile Include="Converters\BaseConverters.cs" />
+    <Compile Include="Converters\TimestampConverter.cs" />
+    <Compile Include="Converters\TimeStampSecondsConverter.cs" />
     <Compile Include="Converters\TypeConverters.cs" />
+    <Compile Include="Converters\UTCDateTimeConverter.cs" />
+    <Compile Include="ExtensionMethods.cs" />
     <Compile Include="Interfaces\IRateLimiter.cs" />
     <Compile Include="Interfaces\IRequest.cs" />
     <Compile Include="Interfaces\IRequestFactory.cs" />
@@ -72,6 +80,20 @@
     <Compile Include="Objects\Error.cs" />
     <Compile Include="Objects\ExchangeOptions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RateLimiter\RateLimiterPerEndpoint.cs" />
+    <Compile Include="RateLimiter\RateLimiterTotal.cs" />
+    <Compile Include="RateLimiter\RateLimitObject.cs" />
+    <Compile Include="Requests\Request.cs" />
+    <Compile Include="Requests\RequestFactory.cs" />
+    <Compile Include="Requests\Response.cs" />
+    <Compile Include="RestClient.cs" />
+    <Compile Include="SocketClient.cs" />
+    <Compile Include="Sockets\BaseSocket.cs" />
+    <Compile Include="Sockets\SocketEvent.cs" />
+    <Compile Include="Sockets\SocketRequest.cs" />
+    <Compile Include="Sockets\SocketSubscription.cs" />
+    <Compile Include="Sockets\UpdateSubscription.cs" />
+    <Compile Include="Sockets\WebsocketFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
