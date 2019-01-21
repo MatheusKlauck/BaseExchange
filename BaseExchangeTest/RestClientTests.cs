@@ -1,4 +1,4 @@
-﻿using BaseExchange.Authentication;
+using BaseExchange.Authentication;
 using BaseExchange.Logging;
 using BaseExchange.Objects;
 using BaseExchange.TestImplementations;
@@ -31,7 +31,9 @@ namespace BaseExchange
 
             // assert
             Assert.IsTrue(result.Success);
-            Assert.IsTrue(TestHelpers.AreEqual(expected, result.Data));
+            Assert.IsTrue(expected.DecimalData == result.Data.DecimalData);
+            Assert.IsTrue(expected.IntData == result.Data.IntData);
+            Assert.IsTrue(expected.StringData == result.Data.StringData);
         }
 
         [TestCase]
